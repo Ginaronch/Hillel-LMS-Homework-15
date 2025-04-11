@@ -54,5 +54,8 @@ r4 = r1 * 4
 assert r4.get_square() == 32, 'Test4'
 
 assert Rectangle(3, 6) == Rectangle(2, 9), 'Test5'
-
-r5 = Rectangle(8,8)
+try:
+    r6 = Rectangle(5,5)
+except WrongRectangle as e:
+    print(e)
+r5 = Rectangle(0,8)
