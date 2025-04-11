@@ -1,0 +1,2 @@
+class WrongRectangle(Exception):
+    pass
